@@ -1,10 +1,14 @@
 class Client
-		attr_accessor :name, :age, :num_kids, :num_pets
+		attr_accessor :c_name, :c_age, :num_kids, :num_pets
 
-	def initialize(name, age, num_kids = nil, num_pets = nil)
-			@name = name
-			@age = age
+	def initialize(c_name, age, num_kids, num_pets)
+			@c_name = c_name
+			@c_age = c_age
 			@num_kids = num_kids
 			@num_pets = num_pets
 	end 
+
+	#def no_clients? #returns true if there are no animals in the shelter
+	#	@clients.nil?
+	#end
 end #end of class Client
