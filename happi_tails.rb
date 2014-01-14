@@ -67,19 +67,17 @@ while choice != 'q'
     message = "Here are the animals available for adoption:"
     happi_tails.animals.each do |x|
     	message += "#{x.a_name}: #{x.a_age} yrs old, #{x.gender}, #{x.species}\n"
-    
   when "4"
     message += 'option 4'
     # List all clients
-    happi_tails.clients.each do |x|
-		message += "#{x.c_name}, #{x.c_age}, #{x.num_kids} kids, #{x.num_pets} pets\n"
-  
-  #when "5"
-   # message += 'option 5'
-    # Facilitate client adopts an animal
+    happi_tails.clients.each do |c|
+		message += "#{c.c_name}, #{c.c_age}, #{c.num_kids} kids, #{c.num_pets} pets\n"
+ #  when "5"
+ #   message += 'option 5'
+ #    Facilitate client adopts an animal
  # when "6"
-  #  message += 'option 6'
-    # Facilitate client puts animal up for adoption
+ #   message += 'option 6'
+ #    Facilitate client puts animal up for adoption
 
   end
   else
